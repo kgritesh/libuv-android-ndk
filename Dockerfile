@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk
 MAINTAINER Ritesh Kadmawala <k.g.ritesh@gmail.com>
-LABEL VERSION="0.1.0"
+LABEL VERSION="0.1.1"
 LABEL NAME="malvo/libuv-android-ndk"
 LABEL DESCRIPTION="Pre-Build libuv for multiple architeures to be used by an \
                    android ndk project"
