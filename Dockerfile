@@ -30,19 +30,7 @@ RUN cd ${WORKDIR} \
 
 ENV PATH ${ANDROID_NDK_HOME}:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:$ANDROID_HOME/platform-tools:$PATH
 
-# Install Android SDK Components
-ENV ANDROID_COMPONENTS "tools" \
-                       "platform-tools" \
-                       "build-tools;26.0.2" \
-                       "platforms;android-25"
-
-
-ENV GOOGLE_COMPONENTS "extras;android;m2repository" \
-                       "extras;google;m2repository" \
-                       "extras;google;google_play_services"
-
-ENV CONSTRAINT_LAYOUT "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2"\
-                       "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"
+# Install Android NDK Components
 
 ENV ANDROID_NDK_COMPONENTS "ndk-bundle" \
                        "lldb;3.0" \
