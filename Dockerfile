@@ -17,10 +17,9 @@ ENV ANDROID_SDK_VERSION r25.2.3
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	unzip \
 	wget \
-  curl \
-  libtool \
-  m4 \
-  automake
+    curl \
+    gyp \
+    make
 
 RUN cd ${WORKDIR} \
     && wget -q --output-document=android-sdk-linux.zip https://dl.google.com/android/repository/tools_${ANDROID_SDK_VERSION}-linux.zip \
